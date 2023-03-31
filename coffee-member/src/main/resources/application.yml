@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: coffee-member
+
+# eureka setting
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
