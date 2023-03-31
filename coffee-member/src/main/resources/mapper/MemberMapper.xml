@@ -7,18 +7,18 @@
     <!--테이블 생성-->
     <update id="createMemberTable" parameterType="MemberVO">
         create table member(
-            id number primary,
+            id number primary key,
             memberName varchar2(50)
         )
     </update>
 
     <!--데이터 생성-->
     <insert id="insertMemberData" parameterType="MemberVO">
-        insert into member values(1, 'kim');
+        insert into member values(1, 'kim')
     </insert>
 
     <!--회원인지 아닌지 체크-->
     <select id="exitsByMemberName" parameterType="MemberVO" resultType="MemberVO">
-        select * from where membername = #{membername}
+        select * from member where memberName = #{memberName}
     </select>
 </mapper>
