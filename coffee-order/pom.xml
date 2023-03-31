@@ -61,6 +61,12 @@
 			<artifactId>ojdbc6</artifactId>
 			<version>11.2.0.4</version>
 		</dependency>
+
+		<!--cloud-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
